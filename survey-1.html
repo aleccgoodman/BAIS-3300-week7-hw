@@ -9,6 +9,76 @@
 </head>
 <body>
     <h1>Survey page 1</h1>
+
+    <form>
+        <fieldset>
+            <legend>Contact Information</legend>
+            <div>
+            <label for="fname"> First name:
+                <input id="fname" type="text">
+            </label>
+        </div>
+            <div>
+            <label for="lname"> Last name:
+                <input id="lname" type="text" autofocus >
+            </label>
+        </div>
+            <div>
+            <label for="email"> Email address:
+                <input id="email" type="email">
+            </label>
+        </div>
+        </fieldset>
+        <div>
+            <label for="race">Select race you most closely identify with:
+            
+            <select name="race" id="races">
+                <option value="American Indian or Alaska Native">American Indian or Alaska Native</option>
+                <option value="Asian">Asian</option>
+                <option value="Black or African American">Black or African American</option>
+                <option value="Native Hawaiian or Other Pacific Islander">Native Hawaiian or Other Pacific Islander</option>
+                <option value="White">White</option>
+            </select>
+            </label>
+        </div>
+        <div>
+            <label for="Ethnicity">Are you Hispanic or Latino
+            
+            <select name="race" id="races">
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+            </label>
+        </div><br>
+
+        <div>
+            <label for="female"> How do you identify?
+                <input type="radio" id="female" name="gender" value="Female">
+                <label for="female">Female</label>
+                <input type="radio" id="male" name="gender" value="Male">
+                <label for="female">Male</label>
+                <input type="radio" id="Non-binary" name="Non-binary" value="Non-binary">
+                <label for="Non-binary">Non-binary</label>
+                <input type="radio" id="Decline" name="Decline" value="Decline">
+                <label for="Decline">Decline to Answer</label>
+            </label>
+        </div><br>
+
+        <div>
+            <label for="sexuality">Sexuality<br>
+                <input type="checkbox" id="hetero" name="hetero" value="hetero">
+                <label for="hetero">Straight, that is not gay or lesbian</label><br>
+                <input type="checkbox" id="bi" name="bi" value="bi">
+                <label for="bi">Bisexual</label><br>
+                <input type="checkbox" id="gay" name="gay" value="gay">
+                <label for="gay">Gay or lesbian</label><br>
+                <input type="checkbox" id="other" name="other" value="other">
+                <label for="other">I use a different term</label><br>
+                <input type="checkbox" id="idk" name="idk" value="idk">
+                <label for="idk">I don't know</label><br>
+            </label> 
+        </div>
+    </form>
     <p>
         <button onclick="window.location.href='./survey-2.html';">
             Next page

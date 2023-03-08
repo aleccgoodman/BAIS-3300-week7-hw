@@ -9,6 +9,56 @@
 </head>
 <body>
     <h1>Survey page 2</h1>
+
+    <form>
+       <div>
+            <label for="hometown"> Hometown:
+                <input id="hometown" type="text">
+            </label><br>
+        </div><br>
+            
+            <div>
+            <label for="NFL">Favorite NFL team:
+            
+            <select name="NFL" id="teams">
+                <option value="bears">Chicago Bears</option>
+                <option value="Chiefs">Kansas City Chiefs</option>
+                <option value="Vikings">Minnesota Vikings</option>
+                <option value="Packers">Green Bay Packers</option>
+            </select>
+            </label>
+        </div><br>
+
+        <div>
+            <label for="iowaTeam"> What is your favorite Iowa Hawkeyes team?
+                <input type="radio" id="Football" name="Football" value="Football">
+                <label for="Football">Football</label>
+                <input type="radio" id="Wrestling" name="Wrestling" value="Wrestling">
+                <label for="Wrestling">Wrestling</label>
+                <input type="radio" id="bball" name="bball" value="bball">
+                <label for="bball">Men's Basketball</label>
+                <input type="radio" id="Wbball" name="Wbball" value="Wbball">
+                <label for="Wbball">Women's Basketball</label>
+            </label>
+        </div><br>
+
+        <div>
+            <label for="Kinnick">Have you been to Kinnick field to watch a Hawkeyes football game?<br>
+                <input type="checkbox" id="yes" name="yes" value="yes">
+                <label for="yes">Yes</label><br>
+                <input type="checkbox" id="no" name="no" value="no">
+                <label for="no">no</label><br>
+            </label> 
+        </div><br>
+        <div>
+            <label for="Carver">Have you been to Carver Hawkeye Arena for a Wrestling meet or Basketball game?<br>         
+            <select name="Carver" id="Carver">
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+            </label>
+        </div><br>
+    </form>
     <p>
         <button onclick="window.location.href='./thank-you.html';">
             Submit survey
